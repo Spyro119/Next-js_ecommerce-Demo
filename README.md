@@ -1,8 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
+## What you need 
 
-First, run the development server:
+* A sanity account and API key
+* A Stripe account with both publishable and secret key
+* Your sanity project ID
+
+First, create a ``.env`` directory at the root of the project and copy your keys.
+
+```sh
+NEXT_SANIT_PUBLIC_TOKEN='YOUR SANITY KEY HERE'
+NEXT_PUBLIC_STRIPE_PUBLIC_API_KEY= 'YOUR KEY HERE'
+NEXT_STRIPE_PRIVATE_API_KEY= 'YOUR SECRET KEY HERE'
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -11,12 +24,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
